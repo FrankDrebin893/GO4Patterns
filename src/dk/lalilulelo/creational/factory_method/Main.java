@@ -5,6 +5,12 @@ package dk.lalilulelo.creational.factory_method;
  */
 public class Main {
     public static void main(String[] args) {
+        ProductFactory factory = new ProductFactory();
 
+        IProduct product = factory.getProduct("ONE");
+        product.firstProductMethod();
+
+        product = factory.getProduct("TWO");
+        product.firstProductMethod();
     }
 }
