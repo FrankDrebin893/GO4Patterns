@@ -5,6 +5,11 @@ package dk.lalilulelo.behavioral.visitor;
  */
 public class Main {
     public static void main(String[] args) {
+        ConcreteProduct product = new ConcreteProduct();
+        ConcreteVisitor visitor = new ConcreteVisitor();
+
+        visitor.visitProduct(product);
+
 
     }
 }
