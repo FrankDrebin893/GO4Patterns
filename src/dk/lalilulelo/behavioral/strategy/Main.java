@@ -5,6 +5,7 @@ package dk.lalilulelo.behavioral.strategy;
  */
 public class Main {
     public static void main(String[] args) {
-
+        TemplateImp strategyOne = new TemplateImp();
+        strategyOne.sneak(5,150);
     }
 }
