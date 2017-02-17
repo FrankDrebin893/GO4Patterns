@@ -5,6 +5,11 @@ package dk.lalilulelo.behavioral.state;
  */
 public class Main {
     public static void main(String[] args) {
+        SocomHandgunStateMachine shsm = new SocomHandgunStateMachine();
 
+        shsm.pullTrigger();
+        shsm.pullTrigger();
+        shsm.pullTrigger();
+        shsm.pullTrigger();
     }
 }
