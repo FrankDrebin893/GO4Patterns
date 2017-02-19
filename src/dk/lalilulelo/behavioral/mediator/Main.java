@@ -16,8 +16,5 @@ public class Main { // TODO: 2/19/2017 Figure out if Colleagues are supposed to 
         peter.send("Hello everyone!");
         george.send("Hi Peter!");
         john.send("Hey guys, how's your day?");
-
-
-
     }
 }
