@@ -17,6 +17,7 @@ public class Main {
         for(itA.first(); !itA.isDone(); itA.next()) {
             System.out.println(itA.currentItem());
         }
+
         System.out.println("----------------------");
 
         for(itA.first(), itB.first(); !itA.isDone(); itA.next(), itB.next()){

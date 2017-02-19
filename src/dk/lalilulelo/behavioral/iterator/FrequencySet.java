@@ -29,21 +29,29 @@ public class FrequencySet {
         }
 
         public void first() {
-            this.it = this.frequencySet.frequencies.iterator();
+            it = frequencySet.frequencies.iterator();
             next();
         }
 
         public void next() {
             try {
-                this.current = (Integer) this.it.next();
+                // Prevent catching exception by checking first
+                if(hasNext()) current = (Integer) it.next();
+                else current = null;
             } catch(NoSuchElementException ex) {
                 System.out.println("No such element was found: " + ex);
                 current = null;
             }
         }
+
+        public boolean hasNext() {
+            return it.hasNext();
+        }
+
         public boolean isDone() {
             return current == null;
         }
+
         public int currentItem() {
             return current;
         }
