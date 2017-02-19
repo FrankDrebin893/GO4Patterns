@@ -10,6 +10,7 @@ public class SocomHandgunStateMachine {
         currentState = new LoadedAmmoState();
     }
 
+
     public void pullTrigger() {
         System.out.println("Trying to pull trigger");
         currentState.pullTrigger(this);

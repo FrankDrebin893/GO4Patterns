@@ -7,9 +7,12 @@ public class Main {
     public static void main(String[] args) {
         SocomHandgunStateMachine shsm = new SocomHandgunStateMachine();
 
-        shsm.pullTrigger();
-        shsm.pullTrigger();
-        shsm.pullTrigger();
-        shsm.pullTrigger();
+        //shsm.pullTrigger();
+        //shsm.pullTrigger();
+        //shsm.pullTrigger();
+        //shsm.pullTrigger();
+
+        LoadedAmmoState las = new LoadedAmmoState();
+        las.pullTrigger(shsm);
     }
 }

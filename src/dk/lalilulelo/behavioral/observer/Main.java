@@ -5,6 +5,20 @@ package dk.lalilulelo.behavioral.observer;
  */
 public class Main {
     public static void main(String[] args) {
+        Subject snake = new Subject();
+
+        SnakeHealthObserver sho = new SnakeHealthObserver(snake);
+        RelaxedSnakeHealthObserver rsho = new RelaxedSnakeHealthObserver(snake);
+
+        snake.setHealth(30);
+        snake.setHealth(60);
+        snake.setHealth(20);
+
+        System.out.println("DETACHING ****************************************");
+        sho.detach();
+
+        snake.setHealth(100);
+
 
     }
 }
